@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>PHOTO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,h1 {font-family: "Montserrat", sans-serif}
+        img {margin-bottom: -7px}
+        .w3-row-padding img {margin-bottom: 12px}
+    </style>
+    <body>
+
+        <!-- Sidebar -->
+        <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+                <i class="fa fa-remove"></i>
+            </a>
+            <div class="w3-bar-block w3-center">
+                <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+                <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+            </div>
+        </nav>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-content" style="max-width:1500px">
+
+            <!-- Header -->
+            <div class="w3-opacity">
+                <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+                <div class="w3-clear"></div>
+                <header class="w3-center w3-margin-bottom">
+                    <h1><b>PHOTO</b></h1>
+                    <p><b>all photo with me</b></p>
+                    <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+                </header>
+            </div>
+
+            <!-- Photo Grid -->
+            <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+                <div class="w3-third">
+                    <img src="https://s.isanook.com/tr/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL3RyLzAvdWQvMjg0LzE0MjA4NzEvZ3JoLmpwZw==.jpg" style="width:100%">
+                    <img src="https://www.thayu.go.th/files/com_travel/2020-05_c6d53470b5c2013.jpg" style="width:100%">
+                    <img src="https://lh3.googleusercontent.com/proxy/ZbjNZBatW8a5AvostV1ZkeF1zXxkRXkH79xU3MiGHXaNhKiBzS1KdWAD5XpoAoZXIcscU8OYoyupTQA5BcUfA0lEvj-RNpJ24NHzDK7xyAg975-thAjAZptotsHPRn-OfhVpAA" style="width:100%">
+                    
+                </div>
+
+                <div class="w3-third">
+                    <img src="https://www.marumura.com/wp-content/uploads/2017/09/icon-1.jpg" style="width:100%">
+                    <img src="https://img.kapook.com/u/2019/sutasinee/07/y7.jpg" style="width:100%">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ba/f4/a3/caption.jpg" style="width:100%">
+                    
+                </div>
+                
+                <div class="w3-third">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhZVk_FyaKX96vxEpgjFVOO2QHDRKKdfnZA&usqp=CAU" style="width:100%">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpISJHzh_-oreJSTNjO8Zvz3E0Elo2IQdDmw&usqp=CAU" style="width:100%">
+                    <img src="http://f.ptcdn.info/630/005/000/1369764944-P52800831-o.jpg" style="width:100%">
+                   
+                </div>
+
+            </div>
+
+            <!-- End Page Content -->
+        </div>
+
+            <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            
+            
+        </footer>
+    
+        <script>
+            // Toggle grid padding
+            function myFunction() {
+                var x = document.getElementById("myGrid");
+                if (x.className === "w3-row") {
+                    x.className = "w3-row-padding";
+                } else { 
+                    x.className = x.className.replace("w3-row-padding", "w3-row");
+                }
+            }
+
+            // Open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.width = "100%";
+                document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+
+    </body>
+</html>
